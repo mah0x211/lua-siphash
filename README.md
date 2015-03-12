@@ -14,7 +14,7 @@ luarocks install siphash --from=http://mah0x211.github.io/rocks/
 
 ## Functions
 
-### hex, err = encode24/encode48( src:str, key:str )
+### hex, err = encode24/encode48( src:str [, key:str] )
 
 **Parameters**
 
