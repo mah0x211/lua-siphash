@@ -68,7 +68,7 @@ static inline int encode_lua( lua_State *L, const uint8_t blk, const uint8_t fin
     size_t len = 0;
     const char *src = luaL_checklstring( L, 1, &len );
     size_t klen = 0;
-    const char *keystr = luaL_checklstring( L, 2, &klen );
+    const char *keystr = luaL_optlstring( L, 2, NULL, &klen );
     uint64_t key[2] = {0};
     uint64_t hash = 0;
     uint8_t hex[16] = {0};
